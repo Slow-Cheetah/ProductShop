@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    android:orientation="vertical"
+    android:padding="2dp"
+    tools:context=".activity_createProduct">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbarCreate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/Orange"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:title="@string/add_prod_btn"
+        app:subtitle="@string/cteate_prod_TB_subtitle"/>
+
+    <ImageView
+        android:id="@+id/createIV"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_gravity="center"
+        android:layout_margin="10dp"
+        android:src="@drawable/sec_basket" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/boeder_rectangle"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="14dp">
+
+        <EditText
+            android:id="@+id/prodNameET"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:hint="@string/prod_name_hint"
+            android:textSize="22sp" />
+
+        <EditText
+            android:id="@+id/prodPriceET"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:hint="@string/prod_price_hint"
+            android:inputType="number"
+            android:textSize="22sp"/>
+
+        <EditText
+            android:id="@+id/prodDescripET"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:hint="@string/description_hint"
+            android:textSize="22sp"/>
+
+        <Button
+            android:id="@+id/confirmBTN"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/add_prod_btn"
+            android:textSize="20sp"
+            android:padding="8dp"
+            android:layout_gravity="center"/>
+
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/shopCopyLV"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:listitem="@layout/list_item" />
+
+</androidx.appcompat.widget.LinearLayoutCompat>

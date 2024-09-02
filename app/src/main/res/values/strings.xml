@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">ProductShop</string>
+    <string name="main_title"> Магазин продуктов </string>
+    <string name="add_prod_btn">Добавить продукт</string>
+    <string name="create_btn">Создать магазин</string>
+    <string name="prod_name_hint">Название продукта</string>
+    <string name="prod_price_hint">Цена продукта</string>
+    <string name="text_exit">Выход</string>
+    <string name="description_hint">Заполние краткое описание</string>
+    <string name="cteate_prod_TB_subtitle">Создание ячейки</string>
+    <string name="edit_tb_title">Окно редакирования</string>
+    <string name="edit_tb_subtitle">Внесение изменений</string>
+    <string name="save_and_exit">Сохранить и выйти</string>
+</resources>

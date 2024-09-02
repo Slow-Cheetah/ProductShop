@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    android:orientation="vertical"
+    android:padding="2dp"
+    tools:context=".EditActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbarEdit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/Orange"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:subtitle="@string/edit_tb_subtitle"
+        app:title="@string/edit_tb_title" />
+
+    <ImageView
+        android:id="@+id/editIV"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_gravity="center"
+        android:layout_margin="10dp"
+        android:background="@drawable/boeder_rectangle"/>
+
+    <EditText
+        android:id="@+id/editNameET"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/boeder_rectangle"
+        android:gravity="center"
+        android:hint="@string/prod_name_hint"
+        android:textSize="24sp" />
+
+    <EditText
+        android:id="@+id/editPriceET"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/boeder_rectangle"
+        android:gravity="center"
+        android:hint="@string/prod_price_hint"
+        android:inputType="number"
+        android:textSize="24sp" />
+
+    <EditText
+        android:id="@+id/editDescripET"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/boeder_rectangle"
+        android:gravity="center"
+        android:hint="@string/description_hint"
+        android:textSize="24sp" />
+
+    <Button
+        android:id="@+id/editConfirmBTN"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:padding="8dp"
+        android:text="@string/save_and_exit"
+        android:textSize="20sp" />
+
+</androidx.appcompat.widget.LinearLayoutCompat>
